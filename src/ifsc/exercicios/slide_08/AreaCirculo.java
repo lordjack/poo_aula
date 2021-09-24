@@ -1,4 +1,4 @@
-package ifsc.slides.slide_08;
+package ifsc.exercicios.slide_08;
 
 import java.util.Scanner;
 
