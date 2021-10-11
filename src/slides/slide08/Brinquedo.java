@@ -13,12 +13,6 @@ public class Brinquedo {
         this.nome = nome;
     }
 
-    public Brinquedo(String nome, double velocidade, double aceleracao) {
-        this.nome = nome;
-        this.velocidade = velocidade;
-        this.aceleracao = aceleracao;
-    }
-
     // ...
     public void mover() {
         System.out.println("Mover Brinquedo");
@@ -28,8 +22,17 @@ public class Brinquedo {
         return velocidade;
     }
 
+    public void setVelocidade(int velocidade) {
+        this.velocidade = velocidade;
+    }
+
     public void setVelocidade(double velocidade) {
         this.velocidade = velocidade;
+    }
+
+    public void setVelocidade(double velocidade, double ac) {
+        this.velocidade = velocidade;
+        this.aceleracao = ac;
     }
 
     public double getAceleracao() {
