@@ -9,6 +9,18 @@ public class Maior {
     private double xDouble;
     private double yDouble;
 
+    public Maior() {
+
+    }
+    public Maior(int xInt, int yInt, float xFloat, float yFloat, double xDouble, double yDouble) {
+        this.xInt = xInt;
+        this.yInt = yInt;
+        this.xFloat = xFloat;
+        this.yFloat = yFloat;
+        this.xDouble = xDouble;
+        this.yDouble = yDouble;
+    }
+
     public int calcMaior(int x, int y) {
         if (x > y) {
             return x;
