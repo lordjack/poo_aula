@@ -10,14 +10,19 @@ public class MainPessoa {
 
         Pessoa pessoas[] = new Pessoa[qtdPessoas];
 
-        for (Pessoa pessoa : pessoas) {
-            pessoa.setNome(leitor.nextLine());
+        for (int i = 0; i < pessoas.length; i++) {
+            Pessoa pessoa = new Pessoa();
+            System.out.println("Informe um nome de uma pessoa");
+            pessoa.setNome(leitor.next());
+            System.out.println("Informe a idade de uma pessoa");
             pessoa.setIdade(leitor.nextInt());
+
+            pessoas[i] = pessoa;
         }
 
-        for (Pessoa pessoa : pessoas) {
-            pessoa.getNome();
-            pessoa.getIdade();
+        for (int i = 0; i < pessoas.length; i++) {
+            System.out.println(pessoas[i].getNome());
+            System.out.println(pessoas[i].getIdade());
         }
 
     }
