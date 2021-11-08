@@ -19,7 +19,7 @@ public class Brinquedo {
     }
 
     public double getVelocidade() {
-        return velocidade;
+        return this.velocidade;
     }
 
     public void setVelocidade(int velocidade) {
